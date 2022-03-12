@@ -1,0 +1,69 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Roboto' , sans-serif;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #111;
+}
+
+section{
+  font-size: 15vw;
+}
+section{
+  display: flex;
+  font-size: 15vw;
+  font-weight: 500;
+  color: transparent;
+}
+.vk__letter-V,
+.vk__letter-K{
+  font-size: 17vw;
+  font-weight: 700;
+}
+.vk__letter-V{
+  margin-left: 4vw;
+}
+
+section span{
+  animation: hi 3s linear infinite;
+  animation-delay: calc(0.1s *var(--l)) ;
+}
+
+@keyframes hi{
+  0%{
+    color: #fff;
+    filter: blur(3px) hue-rotate(0deg);
+    text-shadow: 0 0 10px #36d406, 
+    0 0 20px #36d406,
+    0 0 40px #36d406,
+    0 0 80px #36d406,
+    0 0 120px #36d406,
+    0 0 200px #36d406,
+    0 0 300px #36d406,
+    0 0 400px #36d406;
+  }
+
+  30%, 70%{
+    color: #fff;
+    filter: blur(3px) hue-rotate(360deg);
+    text-shadow: 0 0 10px #36d406, 
+    0 0 20px #36d406,
+    0 0 40px #36d406,
+    0 0 80px #36d406,
+    0 0 120px #36d406,
+    0 0 200px #36d406,
+  }
+  100%{
+    color: transparent;
+    box-shadow: none;
+    filter: blur(3px) hue-rotate(0deg);
+  }
+}
